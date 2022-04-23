@@ -15,7 +15,6 @@ RUN adduser --disabled-login --home /home/student --uid 10042 --gid 10042 studen
 USER student
 RUN mkdir -p /home/student/.jupyter
 COPY docker/jupyter_notebook_config.py /home/student/.jupyter
-RUN mkdir /home/student/log
 
 # install Python dependencies for notebooks
 # the next simpler than trying to copy recursively with Docker's stupid ADD/COPY
