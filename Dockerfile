@@ -28,7 +28,7 @@ RUN pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.
 
 # fix for init bug with Torch
 RUN pip install setuptools==59.5.0
-RUN pip install jupyterlab==3.0.10
+RUN pip install ipywidgets jupyterlab==3.0.10
 
 # port configuration
 EXPOSE 8888
